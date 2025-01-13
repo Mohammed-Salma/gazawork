@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\App;
 class AdminController extends Controller
 {
     function dashboard($lang = 'en') {
-        App::setLocale($lang);
+        // App::setLocale($lang);
         return view('admin.dashboard');
     }
 }

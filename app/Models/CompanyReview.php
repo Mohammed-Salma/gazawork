@@ -10,6 +10,8 @@ class CompanyReview extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+    
     function company() {
         return $this->belongsTo(Company::class)->withDefault();
     }
